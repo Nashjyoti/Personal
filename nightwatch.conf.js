@@ -33,6 +33,7 @@ module.exports = {
   globals_path: '',
   
   webdriver: {},
+  
 
   test_workers: {
     enabled: true
@@ -79,7 +80,12 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: '/home/knoldus/Jyoti/Chrome driver/chrome-linux64',
+        port:undefined,
+        host:'localhost',
+        ssl:false,
+        default_path_prefix:'',
+        proxy:undefined,
         cli_args: [
           // --verbose
         ]
