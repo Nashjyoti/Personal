@@ -56,7 +56,7 @@ module.exports = {
       
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: '/home/knoldus/Jyoti/Chrome driver/chrome-linux64'
       },
       
     },
@@ -64,7 +64,7 @@ module.exports = {
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
-        'goog:chromeOptions': {
+       // 'goog:chromeOptions': {
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           //
           // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
@@ -92,6 +92,6 @@ module.exports = {
       }
     },
     
-  },
+  };
   
-};
+//};
