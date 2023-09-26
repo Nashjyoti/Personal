@@ -32,7 +32,11 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
   
-  webdriver: {},
+  webdriver: {
+    start_process: true,
+    port:4444,
+    server_path: '/home/knoldus/Jyoti/Chrome driver/chromedriver-linux64/chromedriver'
+  },
   
 
   test_workers: {
