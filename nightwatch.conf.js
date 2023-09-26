@@ -85,7 +85,7 @@ module.exports = {
 
       webdriver: {
         start_process: true,
-        server_path: '/home/knoldus/Jyoti/Chrome driver/chrome-linux64',
+        server_path: '/home/knoldus/Jyoti/Chrome driver/chromedriver-linux64/chromedriver',
         port:undefined,
         host:'localhost',
         ssl:false,
