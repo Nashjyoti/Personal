@@ -10,11 +10,11 @@
 
   
     <system-err>
-       An error occurred while creating a new ChromeDriver session: [Error] spawn /home/knoldus/Jyoti/Chrome driver EACCES
+       An error occurred while creating a new ChromeDriver session: [Error] spawn //Chrome driver/chromedriver-linux64/chromedriver ENOENT
   Verify if ChromeDriver is configured correctly; using:
   {
      start_process: true,
-     server_path: &#39;/home/knoldus/Jyoti/Chrome driver&#39;,
+     server_path: &#39;//Chrome driver/chromedriver-linux64/chromedriver&#39;,
      port: undefined,
      host: &#39;localhost&#39;,
      ssl: false,
