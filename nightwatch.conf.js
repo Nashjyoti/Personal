@@ -34,7 +34,7 @@ module.exports = {
   
   webdriver: {
     start_process: true,
-    server_path: 'Chrome driver/chromedriver-linux64/chromedriver'
+    
   },
   
 
@@ -61,7 +61,8 @@ module.exports = {
       
       webdriver: {
         start_process: true,
-        server_path: 'Chrome driver/chromedriver-linux64/chromedriver'
+       
+        
       },
       
     },
@@ -85,18 +86,6 @@ module.exports = {
       }
       },
 
-      webdriver: {
-        start_process: true,
-        server_path: 'Chrome driver/chromedriver-linux64/chromedriver',
-        port:undefined,
-        host:'localhost',
-        ssl:false,
-        default_path_prefix:'',
-        proxy:undefined,
-        cli_args: [
-          // --verbose
-        ]
-      }
     },
     
   };
