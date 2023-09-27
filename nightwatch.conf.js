@@ -68,23 +68,20 @@ module.exports = {
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
-        javascriptEnabled: true,
-        acceptSslCerts:true,
-        chromeOptions:{
-          args:["start-fullscreen"]
-        }
-        //'goog:chromeOptions': {
+        'goog:chromeOptions': {
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           //
           // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-          // w3c: true,
-          // args: [
-            //'--no-sandbox',
+          w3c: true,
+         args: [
+            '--no-sandbox',
+            '--disable-dev-shm-usage'
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
             //'--headless'
-         // ]
+         ]
         }
+      }
       },
 
       webdriver: {
@@ -103,6 +100,5 @@ module.exports = {
     
   };
   
-//};
 
 

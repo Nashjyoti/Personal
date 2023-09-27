@@ -5,16 +5,16 @@
 
   <testsuite name="First1"
     errors="1" failures="0" hostname="" id="" package="First1" skipped="2"
-    tests="0" time="0.001000" timestamp="">
+    tests="0" time="0.000" timestamp="">
   
 
   
     <system-err>
-       An error occurred while creating a new ChromeDriver session: [Error] spawn //Chrome driver/chromedriver-linux64/chromedriver ENOENT
+       An error occurred while creating a new ChromeDriver session: [Error] spawn Chrome driver/chromedriver-linux64/chromedriver.exe ENOENT
   Verify if ChromeDriver is configured correctly; using:
   {
      start_process: true,
-     server_path: &#39;//Chrome driver/chromedriver-linux64/chromedriver&#39;,
+     server_path: &#39;Chrome driver/chromedriver-linux64/chromedriver.exe&#39;,
      port: undefined,
      host: &#39;localhost&#39;,
      ssl: false,
