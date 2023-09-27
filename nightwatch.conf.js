@@ -48,8 +48,6 @@ module.exports = {
     default: {
       disable_error_log: false,
       launch_url: 'http://localhost',
-      selenium_port: 33091,
-      selenium_host:"127.0.0.1",
 
       screenshots: {
         enabled: false,
