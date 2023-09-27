@@ -5,32 +5,34 @@
 
   <testsuite name="First1"
     errors="1" failures="0" hostname="" id="" package="First1" skipped="2"
-    tests="0" time="0.000" timestamp="">
+    tests="0" time="0.001000" timestamp="">
   
 
   
     <system-err>
-       An error occurred while creating a new ChromeDriver session: [Error] spawn Chrome driver/chromedriver-linux64/chromedriver.exe ENOENT
+       An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
   Verify if ChromeDriver is configured correctly; using:
   {
      start_process: true,
-     server_path: &#39;Chrome driver/chromedriver-linux64/chromedriver.exe&#39;,
-     port: undefined,
+     server_path: &#39;/home/knoldus/node_modules/chromedriver/lib/chromedriver/chromedriver&#39;,
+     port: 4444,
      host: &#39;localhost&#39;,
      ssl: false,
      default_path_prefix: &#39;&#39;,
      proxy: undefined,
-     cli_args: {}
+     cli_args: []
   }
 
  
-  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+  More info might be available in the log file: /home/knoldus/Jyoti/NightWatch/logs/First1_chromedriver.log
     </system-err>
   
 
     
-    <error message=""><![CDATA[
-      
+    <error message="An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1"><![CDATA[
+      Error: An error occurred while creating a new ChromeDriver session: [Error] Server terminated early with status 1
+    at /home/knoldus/Jyoti/NightWatch/node_modules/selenium-webdriver/remote/index.js:260:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
       ]]></error>  
 
   
