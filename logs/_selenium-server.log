@@ -1,0 +1,38 @@
+12:54:05.301 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+12:54:05.305 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+12:54:05.830 INFO [NodeOptions.getSessionFactories] - Detected 8 available processors
+12:54:05.842 INFO [NodeOptions.discoverDrivers] - Discovered 0 driver(s)
+12:54:05.849 WARN [NodeOptions.addDetectedDrivers] - No drivers have been configured or have been found on PATH
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.grid.Bootstrap.runMain(Bootstrap.java:77)
+	at org.openqa.selenium.grid.Bootstrap.main(Bootstrap.java:70)
+Caused by: org.openqa.selenium.grid.config.ConfigException: java.lang.reflect.InvocationTargetException
+	at org.openqa.selenium.grid.config.MemoizedConfig.getClass(MemoizedConfig.java:115)
+	at org.openqa.selenium.grid.node.config.NodeOptions.getNode(NodeOptions.java:151)
+	at org.openqa.selenium.grid.commands.Standalone.createHandlers(Standalone.java:203)
+	at org.openqa.selenium.grid.TemplateGridServerCommand.asServer(TemplateGridServerCommand.java:41)
+	at org.openqa.selenium.grid.commands.Standalone.execute(Standalone.java:235)
+	at org.openqa.selenium.grid.TemplateGridCommand.lambda$configure$4(TemplateGridCommand.java:129)
+	at org.openqa.selenium.grid.Main.launch(Main.java:83)
+	at org.openqa.selenium.grid.Main.go(Main.java:57)
+	at org.openqa.selenium.grid.Main.main(Main.java:42)
+	... 6 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.grid.config.ClassCreation.callCreateMethod(ClassCreation.java:50)
+	at org.openqa.selenium.grid.config.MemoizedConfig.lambda$getClass$4(MemoizedConfig.java:100)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1737)
+	at org.openqa.selenium.grid.config.MemoizedConfig.getClass(MemoizedConfig.java:95)
+	... 14 more
+Caused by: org.openqa.selenium.grid.config.ConfigException: No drivers have been configured or have been found on PATH
+	at org.openqa.selenium.grid.node.config.NodeOptions.addDetectedDrivers(NodeOptions.java:439)
+	at org.openqa.selenium.grid.node.config.NodeOptions.getSessionFactories(NodeOptions.java:212)
+	at org.openqa.selenium.grid.node.local.LocalNodeFactory.create(LocalNodeFactory.java:79)
+	... 22 more

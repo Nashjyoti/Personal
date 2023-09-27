@@ -34,7 +34,6 @@ module.exports = {
   
   webdriver: {
     start_process: true,
-    port:4444,
     server_path: 'Chrome driver/chromedriver-linux64/chromedriver'
   },
   
@@ -42,11 +41,15 @@ module.exports = {
   test_workers: {
     enabled: true
   },
-
+  // selenium: {
+  //   start_process: true 
+  // },
   test_settings: {
     default: {
       disable_error_log: false,
       launch_url: 'http://localhost',
+      selenium_port: 33091,
+      selenium_host:"127.0.0.1",
 
       screenshots: {
         enabled: false,
