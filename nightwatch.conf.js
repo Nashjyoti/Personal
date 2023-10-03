@@ -117,17 +117,17 @@ test_settings: {
 
         // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
 
-        w3c: true,
+        w3c: false,
 
         args: [
 
-          //'--no-sandbox',
+          '--no-sandbox',
 
           //'--ignore-certificate-errors',
 
           //'--allow-insecure-localhost',
 
-          // '--headless'
+          '--headless'
 
         ]
 
