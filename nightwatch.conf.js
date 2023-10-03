@@ -117,7 +117,7 @@ test_settings: {
 
         // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
 
-        w3c: false,
+        w3c: true,
 
         args: [
 
@@ -143,7 +143,7 @@ test_settings: {
 
       server_path: 'node_modules/.bin/chromedriver',
 
-      port: 9515,
+      //port: 9515,
 
       cli_args: [
 
