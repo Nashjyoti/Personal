@@ -32,77 +32,131 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
   
-  webdriver: {
-    start_process: true,
-    port:4444,
-    server_path:require('chromedriver').path,
-    cli_args:[
-      
-    ]
+
+webdriver: {},
+
+ 
+
+test_workers: {
+
+  enabled: true
+
+},
+
+
+
+test_settings: {
+
+  default: {
+
+    disable_error_log: false,
+
+    launch_url: 'http://localhost',
+
+
+
+    screenshots: {
+
+      enabled: false,
+
+      path: 'screens',
+
+      on_failure: true
+
+    },
+
+
+
+    desiredCapabilities: {
+
+      browserName: 'chrome',
+
+
+
+      chromeOptions: {
+
+
+
+         args: ['--headless', '--no-sandbox']
+
+
+
+      }
+
+    },
+
     
+
+    webdriver: {
+
+      start_process: true,
+
+      server_path: '',
+
+      // port: 9515
+
+    },
+
+    
+
   },
+
   
 
-  test_workers: {
-    enabled: true
-  },
-  // selenium: {
-  //   start_process: true 
-  // },
-  test_settings: {
-    default: {
-      disable_error_log: false,
-      launch_url: 'http://localhost',
+  chrome: {
 
-      screenshots: {
-        enabled: false,
-        path: 'screens',
-        on_failure: true
-      },
+    desiredCapabilities: {
 
-      desiredCapabilities: {
-        browserName: 'chrome'
-      },
-      
-      webdriver: {
-        start_process: true,
-       
-        
-      },
-      
-    },
-    
-    // chrome: {
-    //   desiredCapabilities: {
-    //     browserName: 'chrome',
-    //     'goog:chromeOptions': {
-    //       // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
-    //       //
-    //       // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
-    //       w3c: true,
-    //      args: [
-    //         '--no-sandbox',
-    //         '--disable-dev-shm-usage'
-    //         //'--ignore-certificate-errors',
-    //         //'--allow-insecure-localhost',
-    //         //'--headless'
-    //      ]
-    //     }
-    //   }
-    //   },
+      browserName: 'chrome',
 
-      chrome: { desiredCapabilities : { 
-        browserName : 'chrome', 
-        'goog:chromeOptions' : 
-        {
-          w3c: true, args: [ 
-            '--no-sandbox', 
-            '--disable-dev-shm-usage'
-           ] 
-          } 
-        },
+      'goog:chromeOptions': {
+
+        // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
+
+        //
+
+        // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
+
+        w3c: true,
+
+        args: [
+
+          //'--no-sandbox',
+
+          //'--ignore-certificate-errors',
+
+          //'--allow-insecure-localhost',
+
+          // '--headless'
+
+        ]
+
+      }
 
     },
-    
+
+
+
+    webdriver: {
+
+      start_process: true,
+
+      server_path: 'node_modules/.bin/chromedriver',
+
+      port: 9515,
+
+      cli_args: [
+
+        // --verbose
+
+      ]
+
+    }
+
   },
+
+  
+
+},
+
 };
