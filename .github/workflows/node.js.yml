@@ -28,6 +28,6 @@ jobs:
         cache: 'npm'
     - run: sudo apt-get install xvfb 
     - name: Run Nightwatch tests 
-      run: xvfb-run --auto-servernum npm test -- --env chrome
+      run: npx nightwatch test/First1.js --env chrome
     
 
