@@ -77,7 +77,7 @@ test_settings: {
 
 
 
-         args: ['--headless', '--no-sandbox']
+        // args: ['--headless', '--no-sandbox']
 
 
 
@@ -142,6 +142,7 @@ test_settings: {
       start_process: true,
 
       server_path: 'node_modules/.bin/chromedriver',
+     // server_path:'Chrome driver/chromedriver-linux64/chromedriver',
 
       //port: 9515,
 
