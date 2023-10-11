@@ -5,14 +5,14 @@
 
   <testsuite name="First1"
     errors="0" failures="0" hostname="" id="" package="First1" skipped="0"
-    tests="2" time="12.41" timestamp="">
+    tests="2" time="6.485" timestamp="">
   
-    <testcase name="step one: navigate to google" classname="First1" time="2.949" assertions="1">
+    <testcase name="step one: navigate to google" classname="First1" time="1.961" assertions="1">
 
     
     </testcase>
   
-    <testcase name="step two: click input" classname="First1" time="3.257" assertions="0">
+    <testcase name="step two: click input" classname="First1" time="1.281" assertions="0">
     </testcase>
   
 

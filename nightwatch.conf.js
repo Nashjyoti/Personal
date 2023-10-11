@@ -91,7 +91,7 @@ test_settings: {
 
       start_process: true,
 
-      server_path: '',
+      server_path: 'node_modules/.bin/chromedriver',
 
       // port: 9515
 
