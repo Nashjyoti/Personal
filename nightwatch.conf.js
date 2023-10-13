@@ -145,8 +145,8 @@ test_settings: {
 
       start_process: true,
 
-     // server_path: 'node_modules/.bin/chromedriver',
-     server_path:'Chrome driver/chromedriver-linux64/chromedriver',
+      server_path: 'node_modules/.bin/chromedriver',
+     //server_path:'Chrome driver/chromedriver-linux64/chromedriver',
 
       //port: 9515,
 
