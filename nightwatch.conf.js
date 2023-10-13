@@ -27,10 +27,11 @@ module.exports = {
   custom_assertions_path: ['nightwatch/custom-assertions'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html
-  plugins: [],
+  plugins: ['@nightwatch/apitesting'],
   
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
-  globals_path: '',
+  globals_path: 'global.js',
+  
   
 
 webdriver: {},
@@ -39,7 +40,8 @@ webdriver: {},
 
 test_workers: {
 
-  enabled: true
+  enabled: true,
+  workers: "auto"
 
 },
 
@@ -85,21 +87,23 @@ test_settings: {
 
     },
 
-    
+  
 
     webdriver: {
 
       start_process: true,
+     //start_process: false,
 
-      server_path: 'node_modules/.bin/chromedriver',
+      //server_path: 'node_modules/.bin/chromedriver',
 
       // port: 9515
 
     },
-
     
+  } ,
 
-  },
+
+
 
   
 
@@ -127,7 +131,7 @@ test_settings: {
 
           //'--allow-insecure-localhost',
 
-          '--headless'
+         '--headless'
 
         ]
 
@@ -155,9 +159,24 @@ test_settings: {
     }
 
   },
+  firefox: {
+    desiredCapabilities : {
+      browserName : 'firefox'
+    },
+    
+    webdriver: {
+      start_process: true,
+      port: 4444
+    }
+  }
 
   
+  // api_testing: {
+  //   start_session: false,
+  //   webdriver: {
+  //     start_process: false,
+  //   }
+  // }
+}
+}
 
-},
-
-};
